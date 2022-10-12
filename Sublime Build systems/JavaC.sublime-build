@@ -1,0 +1,6 @@
+{
+	"shell_cmd": "javac --release 8 \"$file\" && java ${file_base_name} <'/home/amit-desktop/Desktop/codeforces-parser-master/io/in'>'/home/amit-desktop/Desktop/codeforces-parser-master/io/out'",
+	"file_regex": "^(...*?):([0-9]*):?([0-9]*)",
+	"selector": "source.java",
+	"working_dir": "${file_path}"
+}

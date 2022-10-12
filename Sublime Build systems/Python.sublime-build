@@ -1,0 +1,15 @@
+{
+	"shell_cmd": "python3 \"$file\" <'/home/amit/Desktop/program/io/in'>'/home/amit/Desktop/program/io/out'",
+	"file_regex": "^[ ]*File \"(...*?)\", line ([0-9]*)",
+	"selector": "source.python",
+
+	"env": {"PYTHONIOENCODING": "utf-8"},
+
+	"variants":
+	[
+		{
+			"name": "Syntax Check",
+			"shell_cmd": "python3 -m py_compile \"${file}\"",
+		}
+	]
+}
